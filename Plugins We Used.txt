@@ -1,0 +1,16 @@
+------------Plugins------------
+
+
+Animation On Scroll plugin - index.html
+
+Light Gallery included via cdnjs urls - gallery.html
+
+Animated Calender Event - events.html
+
+Bxslider - index.html
+
+--------Widget--------
+
+intTelinputs widget - contact.html
+
+
