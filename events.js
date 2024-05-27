@@ -105,3 +105,10 @@ $(document).ready(function() {
 
     $("#calendar").calendarGC(options);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const clubTitle = document.querySelector(".club-title");
+    clubTitle.addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+});

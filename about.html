@@ -10,18 +10,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="navbar.css">
+
+        <script src="about.js"></script>
 
         <title>About Us</title>
     </head>
     
     <body>
         <header>
-            <div class="container">
+            <div>
                 <div class="logo-container">
                     <div class="club-info">
                         <img src="assets/logos/logo.jpg" alt="Our logo">
-                        <h1>AYBU Hiking Club</h1>
+                        <div class="club-title" style="cursor: pointer;"><h1>AYBU Hiking Club</h1></div>
                     </div>
                     <div class="aybu-logo">
                         <img src="assets/logos/aybu.jpg" alt="AYBU logo">
@@ -45,75 +48,41 @@
                 <section>
                     <h3>ABOUT US</h3>
                     <p>
-                        Welcome to the Ankara Yıldırım Beyazıt University Hiking Club!<br> 
-                        Established with a passion for exploration and a love for nature, our club is a vibrant community of outdoor enthusiasts.<br>
-                        Our mission is to promote the joy of hiking while fostering a sense of camaraderie among members.<br>
-                        Whether you're a seasoned trekker or just starting out on your hiking journey, we welcome individuals from all backgrounds and skill levels to join us in discovering the breathtaking landscapes surrounding Ankara.<br>
-                        <br>
+                        Welcome to the Ankara Yıldırım Beyazıt University Hiking Club!
+                        Established with a passion for exploration and a love for nature, our club is a vibrant community of outdoor enthusiasts.
+                        Our mission is to promote the joy of hiking while fostering a sense of camaraderie among members.
+                        Whether you're a seasoned trekker or just starting out on your hiking journey, we welcome individuals from all backgrounds and skill levels to join us in discovering the breathtaking landscapes surrounding Ankara.
+                        <br><br>
                         At the heart of our club is a commitment to adventure and discovery. 
-                        Each month, we organize a variety of hikes ranging from leisurely nature walks to challenging mountain ascents.<br>
-                        Led by experienced guides, our excursions take us through picturesque trails, dense forests, and majestic peaks, offering unforgettable experiences and opportunities to connect with nature.<br>
-                        Beyond hiking, we also host workshops, social events, and volunteer initiatives to further enrich our members' outdoor experiences.<br>
-                        <br>
-                        Joining the Ankara Yıldırım Beyazıt University Hiking Club means more than just exploring the great outdoors—it's about forging lasting friendships and creating memories that will last a lifetime.<br>
-                        Whether it's the thrill of conquering a new summit or the tranquility of a peaceful forest stroll, our club provides a supportive and inclusive environment for all to enjoy.<br>
-                        Come hike with us and embark on a journey of adventure, discovery, and community!<br>
-                        <br>
+                        Each month, we organize a variety of hikes ranging from leisurely nature walks to challenging mountain ascents.
+                        Led by experienced guides, our excursions take us through picturesque trails, dense forests, and majestic peaks, offering unforgettable experiences and opportunities to connect with nature.
+                        Beyond hiking, we also host workshops, social events, and volunteer initiatives to further enrich our members' outdoor experiences.
+                        <br><br>
+                        Joining the Ankara Yıldırım Beyazıt University Hiking Club means more than just exploring the great outdoors—it's about forging lasting friendships and creating memories that will last a lifetime.
+                        Whether it's the thrill of conquering a new summit or the tranquility of a peaceful forest stroll, our club provides a supportive and inclusive environment for all to enjoy.
+                        Come hike with us and embark on a journey of adventure, discovery, and community!
+                        <br><br>
                     </p>
                 </section>
 
-                <section>  <!-- This section contains the photos and names of the members. -->
-                    <div class="grid-container">
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 1">
-                            <p>Our Leader</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 2">
-                            <p>Our Director</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 3">
-                            <p>Our Event Organizator</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 4">
-                            <p>Our Paramedic</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 1">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 2">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 3">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 4">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 1">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 2">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 3">
-                            <p>Member</p>
-                        </div>
-                        <div class="member">
-                            <img src="assets/logos/aybu.jpg" alt="Member 4">
-                            <p>Member</p>
-                        </div>
+                <section>
+                    <h3>Our Valued Members</h3><br><br>
+                    <div class="members" id="members">
+                        <!-- Member items will be inserted here by JavaScript -->
                     </div>
                 </section>
+                
+                <!-- Modal for displaying member information -->
+                <div id="memberModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img id="modalImg" src="" alt="Member Photo">
+                        <div id="memberInfo">
+                            <!-- Member info will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </main>
 

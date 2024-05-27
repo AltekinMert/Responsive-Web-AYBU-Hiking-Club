@@ -43,6 +43,13 @@ submitButton.addEventListener('click', function(event) {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const clubTitle = document.querySelector(".club-title");
+  clubTitle.addEventListener("click", function() {
+      window.location.href = "index.html";
+  });
+});
+
 const input = document.querySelector("#phone");
 window.intlTelInput(input, {
     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/utils.js",
